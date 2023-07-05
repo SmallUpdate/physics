@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa;
+}
+
 html {
     background-color: #242330;
 }
 
 body {
-    margin: 0;
     background: url(background.svg);
     background-position: center;
 }
@@ -23,31 +29,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 4px;
 }
 
-.header {
-    background: #1E1D28;
-}
-
-.menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu .item {
-    font-size: 32px;
-    font-family: Comfortaa;
-    padding: 16px;
-    color: white;
-    cursor: pointer;
-}
-
-.menu .item:hover {
-    background-color: #2DCE1F;
-}
-
 .main {
     box-sizing: border-box;
     padding: 64px;
@@ -56,6 +37,12 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
     background-color: transparent;
     backdrop-filter: blur(8px);
+}
+
+.title {
+    font-size: 32px;
+    line-height: 200%;
+    color: white;
 }
 
 .list {
@@ -67,7 +54,6 @@ body::-webkit-scrollbar-thumb {
 .list .item {
     font-size: 24px;
     line-height: 200%;
-    font-family: Comfortaa;
 }
 
 .term {
